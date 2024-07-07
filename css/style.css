@@ -1,0 +1,290 @@
+/* Primary Color - Navy Blue - #001F3F */
+/* Secondary Color - Gold - #FFD700 */
+/* Accent Color - Coral - #FF7F50 */
+/* Neutral Color - Light Gray #D3D3D3 */
+
+/* Logo Color- Solid Mono Color - Deep Teal #008080 */
+
+/*
+Example Palette Combination
+Background: Light Gray (#D3D3D3)
+Header/Footer: Navy Blue (#001F3F)
+Primary Buttons: Coral (#FF7F50)
+Secondary Buttons: Gold (#FFD700)
+Text: Dark Gray (#333333)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333333;
+}
+
+/* Common CSS class starts */
+.cursor-pointer {
+  cursor: pointer !important;
+}
+section:not(:first-child) {
+  padding: 100px 0px;
+}
+button {
+  border: none;
+  box-shadow: none;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: rgb(17, 24, 39);
+  background-color: #ff7f50;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.head-block p,
+.text-block p {
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.5rem;
+}
+.head-block {
+  max-width: 48rem;
+}
+.text-block {
+  max-width: 64rem;
+}
+/* Common CSS class ends */
+
+.head-bg {
+  background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwzN3x8V2ViJTIwRGV2ZWxvcG1lbnR8ZW58MHx8fHwxNzA2ODIxODk5fDA&ixlib=rb-4.0.3&q=80&w=1080);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+nav.navbar,
+.footer-wrapper {
+  background: #001f3f;
+}
+
+nav.navbar {
+  /* display: flex; */
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent background */
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+nav.navbar.solid {
+  background-color: #001f3f; /* Solid background */
+}
+
+/* Navigation link color */
+li.nav-item .nav-link {
+  color: #b0b0b0;
+  padding: 8px 16px !important;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Create the underline */
+li.nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffd700; /* Gold */
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+li.nav-item .nav-link:hover {
+  color: #ffd700; /* Gold */
+}
+
+li.nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.head-intro {
+  /* min-height: calc(100vh - 100px); */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 31, 63, 0.2);
+}
+
+.head-block h2 {
+  font-size: 72px;
+}
+.head-block p {
+  font-size: 24px;
+}
+
+.responsive-web-design img {
+  box-sizing: border-box;
+  border: none;
+  margin: auto;
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#our-services .services-card {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+#our-services .services-card .image-wrapper {
+  overflow: hidden;
+  height: 240px;
+  margin-bottom: 12px;
+  border: 1px solid #f6f6f6;
+  border-radius: 4px;
+}
+#our-services .services-card .image-wrapper img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+#our-services .services-card:hover .image-wrapper img {
+  transform: scale(1.1);
+  transform-origin: center;
+}
+#our-services .services-card p {
+  font-weight: 500;
+}
+
+.carousel-indicators {
+  margin-bottom: 0px;
+  margin-left: 5%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.carousel-indicators button {
+  height: 12px !important;
+  width: 12px !important;
+  border-radius: 50%;
+  background: white !important;
+  border: none !important;
+}
+.carousel-indicators button.active {
+  background: #d3d3d3 !important;
+  border: 4px solid white !important;
+}
+.carousel-control-prev {
+  justify-content: start;
+}
+.carousel-control-next {
+  justify-content: end;
+}
+.carousel-item {
+  padding: 10px 50px;
+}
+.thanks .text-block {
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+section.thanks-section {
+  padding: 100px 0px 80px;
+  background-color: #d3d3d3;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+#faq .accordion-item {
+  padding: 20px 0px;
+}
+#faq .accordion-button {
+  font-size: 26px;
+}
+#faq .accordion-button:focus {
+  box-shadow: none;
+}
+#faq .accordion-button:not(.collapsed) {
+  background: none;
+  padding-bottom: 0px;
+}
+
+/* .middle-section {
+  background-color: #d3d3d3;
+  background: url("https://media.licdn.com/dms/image/D5612AQHpfEbHVLv-AA/article-cover_image-shrink_720_1280/0/1677436944483?e=2147483647&v=beta&t=TCpljsv4z7HGZ3vuS-6lhuVjt2FqLAdLhgwTfwRevcc");
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
+} */
+.middle-section {
+  position: relative; /* Ensure relative positioning for absolute overlay */
+  background-image: url("https://media.licdn.com/dms/image/D5612AQHpfEbHVLv-AA/article-cover_image-shrink_720_1280/0/1677436944483?e=2147483647&v=beta&t=TCpljsv4z7HGZ3vuS-6lhuVjt2FqLAdLhgwTfwRevcc");
+  background-size: cover; /* Cover entire div with the background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
+}
+
+.middle-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Adjust opacity (0.5 is 50% opacity white) */
+}
+.middle-section h2 {
+  color: aliceblue;
+}
+.middle-section a {
+  background: #ffd700;
+  color: #001f3f;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.contact-card .icon-wrapper {
+  padding: 40px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.contact-card .icon-wrapper:hover {
+  transform: scale(1.5);
+  transform-origin: center;
+}
+.contact-card .icon-wrapper i {
+  font-size: 40px;
+}
+
+section.footer-wrapper {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.footer-image {
+  max-width: 250px;
+}
+
+.footer-wrapper hr {
+  margin: 12px 0px;
+  color: #008080;
+}
+
+.footer-wrapper p {
+  color: #008080;
+}

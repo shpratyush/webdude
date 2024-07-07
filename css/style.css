@@ -200,7 +200,7 @@ li.nav-item .nav-link:hover::after {
 section.thanks-section {
   padding: 100px 0px 80px;
   background-color: #d3d3d3;
-  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+/*   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%); */
 }
 
 #faq .accordion-item {
@@ -230,7 +230,7 @@ section.thanks-section {
   background-size: cover; /* Cover entire div with the background image */
   background-position: center;
   background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
+/*   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%); */
 }
 
 .middle-section::before {

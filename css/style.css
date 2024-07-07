@@ -82,7 +82,7 @@ nav.navbar {
   z-index: 1000;
 }
 
-nav.navbar .navbar-collapse {
+nav.navbar .navbar-collapse.show {
   background-color: rgba(0, 31, 63, 0.8);
 }
 
@@ -90,7 +90,7 @@ nav.navbar.solid {
   background-color: #001f3f; /* Solid background */
 }
 
-nav.navbar.solid .navbar-collapse {
+nav.navbar.solid .navbar-collapse.show {
   background: #001f3f;
 }
 

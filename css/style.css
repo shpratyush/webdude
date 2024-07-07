@@ -12,6 +12,7 @@ Header/Footer: Navy Blue (#001F3F)
 Primary Buttons: Coral (#FF7F50)
 Secondary Buttons: Gold (#FFD700)
 Text: Dark Gray (#333333)
+NavLink: #b0b0b0
 */
 
 * {
@@ -81,8 +82,26 @@ nav.navbar {
   z-index: 1000;
 }
 
+nav.navbar .navbar-collapse {
+  background-color: rgba(0, 31, 63, 0.8);
+}
+
 nav.navbar.solid {
   background-color: #001f3f; /* Solid background */
+}
+
+nav.navbar.solid .navbar-collapse {
+  background: #001f3f;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  border-color: #b0b0b0;
+}
+.navbar-toggler i {
+  color: #b0b0b0 !important;
 }
 
 /* Navigation link color */
@@ -126,6 +145,11 @@ li.nav-item .nav-link:hover::after {
 
 .head-block h2 {
   font-size: 72px;
+}
+@media (max-width: 767px) {
+  .head-block h2 {
+    font-size: 40px;
+  }
 }
 .head-block p {
   font-size: 24px;
@@ -200,7 +224,7 @@ li.nav-item .nav-link:hover::after {
 section.thanks-section {
   padding: 100px 0px 80px;
   background-color: #d3d3d3;
-/*   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%); */
+  /* clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%); */
 }
 
 #faq .accordion-item {
@@ -230,7 +254,7 @@ section.thanks-section {
   background-size: cover; /* Cover entire div with the background image */
   background-position: center;
   background-repeat: no-repeat;
-/*   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%); */
+  /* clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%); */
 }
 
 .middle-section::before {
@@ -277,7 +301,8 @@ section.footer-wrapper {
   padding-bottom: 16px;
 }
 .footer-image {
-  max-width: 250px;
+  max-width: 200px;
+  align-self: center;
 }
 
 .footer-wrapper hr {
